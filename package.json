@@ -1,0 +1,52 @@
+{
+  "name": "design-to-cursor-rule",
+  "version": "1.0.0",
+  "description": "Convert design images to Cursor rules",
+  "scripts": {
+    "start": "npx parcel public/index.html",
+    "build": "npx parcel build public/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "cz",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major",
+    "release:patch": "standard-version --release-as patch",
+    "prepare": "husky install"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "keywords": [
+    "design",
+    "cursor",
+    "ai",
+    "image-analysis"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.0.1",
+    "@tensorflow/tfjs": "^4.22.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-dropzone": "^14.3.8"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.2.1",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "buffer": "^6.0.3",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.0.11",
+    "parcel": "^2.14.4",
+    "process": "^0.11.10",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.8.2"
+  }
+}
